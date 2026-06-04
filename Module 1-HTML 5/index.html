@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Event Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home">Community Event Portal</a>
+      <div class="nav-links">
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">City connect program</p>
+        <h1>Find local events, register online, and stay connected.</h1>
+        <p>
+          Explore workshops, cultural evenings, fitness sessions, and volunteer
+          activities happening around your neighborhood.
+        </p>
+        <a class="button" href="#register">Register for an Event</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="notice" id="welcome">
+      <h2>Welcome Message</h2>
+      <p>
+        Welcome to the community portal. Use this page to discover upcoming
+        programs and reserve your place.
+      </p>
+      <p class="highlight">Special offer: early registrations receive priority seating.</p>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-heading">
+        <p class="eyebrow">Upcoming</p>
+        <h2>Events</h2>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <img src="assets/images/img1.jpg" alt="People gathered for a community event">
+          <div>
+            <h3>Neighborhood Meetup</h3>
+            <p>Meet residents, local organizers, and volunteers.</p>
+            <span>June 15, 2026</span>
+          </div>
+        </article>
+        <article class="event-card">
+          <img src="assets/images/img2.jpg" alt="Indoor creative workshop">
+          <div>
+            <h3>Creative Workshop</h3>
+            <p>Hands-on learning for students and families.</p>
+            <span>June 20, 2026</span>
+          </div>
+        </article>
+        <article class="event-card">
+          <img src="assets/images/img3.jpg" alt="Outdoor wellness activity">
+          <div>
+            <h3>Wellness Morning</h3>
+            <p>Yoga, walking groups, and healthy living tips.</p>
+            <span>June 24, 2026</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Memories</p>
+        <h2>Image Gallery</h2>
+      </div>
+      <div class="gallery">
+        <img src="assets/images/img1.jpg" alt="Community photo 1">
+        <img src="assets/images/img2.jpg" alt="Community photo 2">
+        <img src="assets/images/img3.jpg" alt="Community photo 3">
+        <img src="assets/images/img4.jpg" alt="Community photo 4">
+        <img src="assets/images/img5.jpg" alt="Community photo 5">
+        <img src="assets/images/img6.jpg" alt="Community photo 6">
+      </div>
+    </section>
+
+    <section class="section split" id="register">
+      <div>
+        <p class="eyebrow">Join in</p>
+        <h2>Event Registration</h2>
+        <p>
+          Fill in your details and choose an event. Your selection is saved as a
+          preference for your next visit.
+        </p>
+
+        <form id="registrationForm">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+          <label for="eventType">Event type</label>
+          <select id="eventType" name="eventType" required>
+            <option value="">Select an event</option>
+            <option>Neighborhood Meetup</option>
+            <option>Creative Workshop</option>
+            <option>Wellness Morning</option>
+            <option>Volunteer Drive</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any special request?"></textarea>
+
+          <button class="button" type="submit">Submit Registration</button>
+          <button class="button secondary" type="button" id="clearPreference">Clear Preference</button>
+        </form>
+        <p class="status" id="formStatus" aria-live="polite"></p>
+      </div>
+
+      <aside class="video-panel">
+        <h3>Event Invite</h3>
+        <video controls poster="assets/images/event.jpg" width="100%">
+          <source src="assets/video/event.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </aside>
+    </section>
+
+    <section class="section location" id="contact">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2>Find Nearby Events</h2>
+        <p>Use geolocation to show your current coordinates for local event lookup.</p>
+      </div>
+      <div>
+        <button class="button" id="locationButton" type="button">Get Location</button>
+        <p class="status" id="locationStatus" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Community Event Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
