@@ -1,0 +1,239 @@
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body Styles */
+body{
+    font-family:'Poppins',sans-serif;
+    color:#1b4332;
+}
+
+/* Element Selector */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Main Heading */
+h1{
+    text-align:center;
+    padding:20px;
+    font-size:3vw;
+}
+
+/* ID Selector */
+#mainHeader{
+    background:
+    linear-gradient(
+    rgba(46,125,50,0.8),
+    rgba(76,175,80,0.8)),
+    url("banner1.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+    padding:50px;
+    border-radius:20px;
+    margin:20px;
+    min-height:35vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.2);
+}
+
+nav a:hover{
+    background:white;
+    color:#2e7d32;
+}
+
+/* Subtitle */
+.subtitle{
+    margin-top:15px;
+    font-size:1.1rem;
+    font-weight:400;
+    letter-spacing:1px;
+    line-height:1.8;
+}
+
+/* Layout */
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    background:rgba(255,255,255,0.9);
+    margin:25px 0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Class Selector */
+.eventCard{
+    border:2px solid rgba(76,175,80,0.2);
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+}
+
+/* Group Selector */
+h3,p{
+    color:#1b4332;
+}
+
+.eventCard p{
+    margin-top:10px;
+    line-height:1.8;
+    letter-spacing:0.5px;
+}
+
+/* Button */
+.cta-button{
+    margin-top:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.cta-button:hover{
+    background:#1b5e20;
+}
+
+/* Link States */
+a:link{
+    color:#0d47a1;
+}
+
+a:visited{
+    color:#6a1b9a;
+}
+
+a:hover{
+    color:#2e7d32;
+}
+
+a:active{
+    color:red;
+}
+
+/* List Styling */
+.quick-links{
+    list-style-type:square;
+    list-style-position:inside;
+}
+
+.quick-links li{
+    padding:10px;
+    margin:8px 0;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#c8e6c9;
+}
+
+tbody tr:nth-child(even){
+    background:#f1f8e9;
+}
+
+/* Form */
+.contact-form label{
+    display:block;
+    margin-top:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:3px solid rgba(76,175,80,0.4);
+}
+
+/* Multi Columns */
+.news-article{
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+}
+
+/* Visibility Demo */
+.hidden-box{
+    visibility:hidden;
+    height:50px;
+}
+
+.none-box{
+    display:none;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    h1{
+        font-size:6vw;
+    }
+
+    .news-article{
+        column-count:1;
+    }
+
+    section{
+        padding:15px;
+    }
+}
